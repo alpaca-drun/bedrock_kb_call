@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+    <title>Chatbot</title>
+
+    <script src="/static/js/core/jquery-3.7.1.min.js"></script>
+    <script src="/static/js/core/bootstrap.min.js"></script>
+    <script src="/static/js/chatbot.js"></script>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/kaiadmin.min.css" />
+    <link rel="stylesheet" href="/static/css/chatbot.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div class="wrapper">
+      <div class="main-panel">
+
+        <div class="main-header">
+          <!-- 헤더(모바일) 시작-->
+          <span class="logo_title_m">
+            Chatbot
+          </span>
+          <!-- 헤더(모바일) 끝-->
+
+          <!-- 헤더(웹) 시작 -->
+          <nav class="navbar navbar-header navbar-header-transparent navbar-expand-lg border-bottom">
+            <div class="container-fluid">
+                <span class="logo_title" style="font-weight: bold; font-size: 20px;color: #373A40;">
+                  Chatbot
+                </span>
+            </div>
+          </nav>
+          <!-- 헤더(웹) 끝 -->
+        </div>
+
+        <!-- 채팅창 시작 -->
+        <div class="container" id="container">
+          <div class="page-inner">
+            <div class="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
+                <!-- 채팅 영역 시작 -->
+                <div id="response">
+                  <div class="response-item"><span class="response-icon"><i class="fas fa-atom"></i></span>안녕하세요. 어떤 정보가 궁금하신가요?<br></div>
+                  
+                </div>
+                <!-- 채팅 영역 끝 -->
+
+                <!-- 답변 로딩 아이콘 시작 -->
+                <div id="load">
+                  <div id="loadingBox" >
+                    <span class="response-icon2"><i class="fas fa-atom"></i></span>
+                    <div class="loading" style="flex-direction: row !important;">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div> 
+                </div>
+                <!-- 답변 로딩 아이콘 끝 -->
+
+                <!-- 입력창 시작 -->
+                <div id="findKeyword" class="input_group">
+                    <form id="chat-form" class="queryBox">
+                      <input type="text" id="user-input" name="text"  placeholder="질문을 입력해주세요!">
+                      <button id="find_query" class="submit" type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <!-- 입력창 끝 -->
+
+            </div>
+          </div>
+        </div>
+        <!-- 채팅창 끝 -->
+
+      </div>
+    </div>
+</body>
+</html>
